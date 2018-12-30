@@ -1,0 +1,41 @@
+1. Sign In
+2. Sign Up
+3. Dashboard
+	+ Searching (On Search Button Click)
+		+ Course title (autocomplete)
+		+ Subject (selection)
+		+ Price (range)
+		+ Duration (range)
+	+ Details (On Click: New Page)
+		+ Course Info
+		+ Topics Listing  (Name, Questions)
+		+ Cart Status of current item (View Components)
+			+ Add to Cart (Button) Authorized
+			+ Update the Main navbar View for Cart
+4 Cart Listing, payments, and order placement (PI)
+5 Orders (Users) ---> OrderItem
+6 Order (Admin) ---> OrderItem ------> Subscription (StartDate, EndDate)
+7 Subscriptions (Status)
+8. User Management
+9. Role Management
+
+Tables
+1 . Subject (SubjectId, Name, Code, Description)
+2 . Course (CourseId, Created, Title, Description, SubjectId, Price, Duration, IsFeatured)
+3. Topic (TopicId, CourseId, Title, Created)
+4. Cart (CartId, AppUserId, CourseId, Created, CartStatus, Price) 
+	+ CartStatus: 1: Active, 2: Passive, 3: Processed
+5. Order (OrderId, OrderDate, AppUserId, OrderStatus)
+	+ OrderStatus: 1: Active, 2: Passive, 3: Processed
+6. OrderItem (OrderItemId, OrderId, CartId, Created)
+7. Subscription (SubscriptionId, OrderItemId, Created, StartDate, EndDate)
+
+
+1. User interfacce
+2. Data Access
+3. Business Logic
+4. Auths. 
+5. 
+
+
+
