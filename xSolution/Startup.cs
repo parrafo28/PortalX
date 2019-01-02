@@ -38,7 +38,8 @@ namespace xSolution
                 route.MapRoute(
                     name: "areas",
                     template: "{area:exists}/{controller}/{action}/{id?}",
-                    defaults: new // this will check an index page under Area Controllers
+                    defaults: new 
+                    // this will check an index page under Area Controllers
                     {
                         controller = "Home",
                         action = "Index"
