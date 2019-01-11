@@ -8,80 +8,35 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" type="text/css" media="screen" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="~/lib/designX.css">
     
     @RenderSection("Styles", required: false)
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-
-            <a class="navbar-brand"
-               asp-area="" asp-controller="Home" asp-action="Index">Web App</a>
-            <button class="navbar-toggler" type="button" 
-                    data-toggle="collapse" data-target="#navbarSupportedContent" 
-                    aria-controls="navbarSupportedContent" aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <div class="fluid-container">
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light ">
+            <a class="navbar-brand" href="#">
+                <img src="~/img/portalX-brand-logo.png" width="160px" height="40px" alt="PortalX-Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                           asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                           asp-area="" asp-controller="Dashboard" asp-action="Index">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                           asp-area="" asp-controller="Home" asp-action="About">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                           asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                           asp-area="Admin" asp-controller="Home" asp-action="Index">Admin</a>
-                    </li>
-                </ul>
-
-                <ul class="navbar-nav float-right">
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                           asp-area="" asp-controller="Account" asp-action="SignIn">Sign In</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" 
-                           asp-area="" asp-controller="Account" asp-action="SignOut">Sign Out</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" 
-                           href="#" id="navbarDropdown" role="button" 
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           My Account
-                        </a>
-                        <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" asp-area="User" asp-controller="Order" asp-action="Index">Orders</a>
-                            <a class="dropdown-item" asp-area="User" asp-controller="Subscription" asp-action="Index">Subscriptions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" asp-area="User" asp-controller="Profile" asp-action="Index">Profile</a>
-                        </div>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav my-2 my-sm-0">
+                    <a class="nav-item nav-link btn btn-primary my-2 my-sm-0" href="#" role="button">Get Started</a>
+                    <a class="nav-item nav-link">Log In</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 
     <div class="container">
         @RenderBody()
 
         <hr />
-        <footer>
-            &copy; 2018 - EVS Professional Training Institute
+        <footer class="bg-dark">
+            &copy; 2019 - PortalX
         </footer>
 
     </div>
