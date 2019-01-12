@@ -14,7 +14,7 @@
 
 </head>
 <body>
-        <nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light ">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light "> <!-- make it sticky-top -->
             <a class="navbar-brand" href="/">
                 <img src="~/img/portalX-brand-logo.png" width="160px" height="40px" alt="PortalX-Logo">
             </a>
@@ -22,10 +22,12 @@
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-sm-center" id="navbarNavAltMarkup">
-                <a class="nav-item nav-link" href="#">Log In</a>
-                <span class="float-right"><a class="btn btn-primary" href="#" role="button">Get Started</a></span>    
-
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav float-right">
+                <a class="nav-item nav-link mr-5" href="#">Log In</a>
+                <a class="nav-item btn btn-primary" href="#" role="button">Get Started</a>
+            	</div>
+                
             </div>
             
             
