@@ -13,7 +13,7 @@
     @RenderSection("Styles", required: false)
 
 </head>
-<body>
+<body id="body">
         <nav class="navbar navbar-expand-sm navbar-light bg-light "> <!-- make it sticky-top -->
             <a class="navbar-brand" href="/">
                 <img src="~/img/portalX-brand-logo.png" width="160px" height="40px" alt="PortalX-Logo">
@@ -33,6 +33,18 @@
             
         </nav>
 
+        <p><a href="#main_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
+
+<nav id="main_nav">
+    <ul>
+        <li><a href="">This</a></li>
+        <li><a href="">That</a></li>
+        <li><a href="">The other</a></li>
+        <!-- etc. -->
+    </ul>
+    <p><a href="#body" id="access_top" class="access_aid">Skip to top</a></p>
+</nav>
+
         <hr />
     <div class="container">
         @RenderBody()
@@ -47,6 +59,7 @@
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/lib/popper.js/dist/popper.js"></script>
+    <script src="~/lib/magix.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>

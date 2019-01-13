@@ -1,1 +1,0 @@
-$K.add('extend', 'dom', $K.Dom.prototype);
