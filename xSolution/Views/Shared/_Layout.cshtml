@@ -13,8 +13,9 @@
     @RenderSection("Styles", required: false)
 
 </head>
-<body id="body">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light "> <!-- make it sticky-top -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <!-- make it sticky-top -->
+        <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <img src="~/img/portalX-brand-logo.png" width="160px" height="40px" alt="PortalX-Logo">
             </a>
@@ -22,37 +23,56 @@
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav float-right">
-                <a class="nav-item nav-link mr-5" href="#">Log In</a>
-                <a class="nav-item btn btn-primary" href="#" role="button">Get Started</a>
+				<div class="navbar-nav ml-3 mr-auto">
+                    <a class="nav-item nav-link" href="#">Explore</a>
+                    <a class="nav-item nav-link" href="#">About Us</a>    
             	</div>
+                <div class="navbar-nav float-right">
+                    <a class="nav-item nav-link mr-5" href="#">Log In</a>
+                    <a class="nav-item btn btn-primary" href="#" role="button">Get Started</a>
+                </div>
                 
+            </div>          
+        </div>   
+    </nav>
+
+    @RenderBody()
+
+    <hr />
+
+    <div class="container-fluid">
+        
+        
+        <footer class="ml-3">
+        
+            <div class="row">
+                <div class="col-lg-4">
+                    <h5>PortalX</h5>
+                    <h6>Learning X demystified!</h6>
+                    &copy; 2019 - PortalX
+                
+                </div>
+                <div class="col-lg-4">
+                    <h6>Contact Us</h6>
+                    <nav class="nav flex-column">
+                    <a class="nav-link nav-item" href="#">Home</a>
+                    <a class="nav-link nav-item" href="#">Log In</a>
+                    <a class="nav-link nav-item" href="#">Request Info</a>
+                    <a class="nav-link nav-item" href="#">Terms and Privacy</a>
+                    </nav>
+                
+                </div>
+                <div class="col-lg-4">
+                    <h6>Sign Up for TestMag</h6>
+                    <p>Sign up for our fortnightly newsletter. No Spam Ever! </p>
+                
+                </div>
             </div>
-            
-            
-        </nav>
-
-        <p><a href="#main_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
-
-<nav id="main_nav">
-    <ul>
-        <li><a href="">This</a></li>
-        <li><a href="">That</a></li>
-        <li><a href="">The other</a></li>
-        <!-- etc. -->
-    </ul>
-    <p><a href="#body" id="access_top" class="access_aid">Skip to top</a></p>
-</nav>
-
-        <hr />
-    <div class="container">
-        @RenderBody()
-
-        <footer>
-            &copy; 2019 - PortalX
+        
         </footer>
-
+    
     </div>
     
 

@@ -36,6 +36,3 @@ Tables
 3. Business Logic
 4. Auths. 
 5. 
-
-
-
