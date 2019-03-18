@@ -35,4 +35,4 @@ Tables
 2. Data Access
 3. Business Logic
 4. Auths. 
-5. 
+5. Razorpay Payment Gateway SDK Integration
