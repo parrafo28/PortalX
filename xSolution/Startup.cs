@@ -32,7 +32,7 @@ namespace xSolution
             }
 
             app.UseStaticFiles(); // I want this software to use wwwwroot files to serve users.
-            app.UseCookiePolicy(); // This will adjust GDPR policy.
+            app.UseCookiePolicy(); // This will add GDPR policy.
 
             app.UseMvc(route => // webapp pagination and structure 
             {
